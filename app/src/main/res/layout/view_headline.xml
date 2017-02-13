@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/headline_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headline_height" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headline_titlebar_height"
+        android:layout_gravity="bottom"
+        android:background="@color/headline_titlebar_bg">
+
+        <TextView
+            android:id="@+id/headline_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textColor="@android:color/white" />
+
+        <com.estyle.teabaike.widget.PointView
+            android:id="@+id/point_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+    </RelativeLayout>
+
+</FrameLayout>

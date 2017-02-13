@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="bean"
+            type="com.estyle.teabaike.bean.MainBean.DataBean" />
+
+    </data>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentPadding="@dimen/activity_horizontal_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/thumb_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_launcher"
+                app:imgUrl="@{bean.wap_thumb}" />
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_toLeftOf="@id/thumb_iv"
+                android:text="@{bean.title}"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/source_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_tv"
+                android:text="@{bean.source}" />
+
+            <TextView
+                android:id="@+id/nickname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_tv"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toRightOf="@id/source_tv"
+                android:text="@{bean.nickname}" />
+
+            <TextView
+                android:id="@+id/create_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_tv"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toRightOf="@id/nickname_tv"
+                android:text="@{bean.create_time}" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</layout>

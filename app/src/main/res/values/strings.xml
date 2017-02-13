@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">茶百科</string>
+    <string name="collection">收藏夹</string>
+    <string name="about_app">关于客户端</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="copyright">版权信息</string>
+    <string name="share">分享</string>
+    <string name="collect">收藏</string>
+    <string name="suggestion">意见反馈</string>
+    <string name="loading_data">正在加载数据</string>
+    <string name="find_nothing">没找到任何数据</string>
+    <string name="fail_connect">网络不给力</string>
+    <string name="keyword">关键字</string>
+    <string name="search">搜索</string>
+    <string name="hot_search">热门搜索：茶</string>
+    <string name="suggestion_title">标题</string>
+    <string name="suggestion_content">反馈内容</string>
+    <string name="suggestion_commit">提交</string>
+    <string name="collect_successful">成功收藏</string>
+    <string name="share_successful">成功分享</string>
+    <string name="check_all">全选</string>
+    <string name="uncheck_all">取消</string>
+    <string name="revoke">撤销</string>
+    <string name="delete_successful">成功删除%d条收藏</string>
+    <string name="exit_tip">再按一次退出茶百科</string>
+</resources>

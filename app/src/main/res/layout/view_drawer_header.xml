@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <Button
+        android:id="@+id/search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@color/tea_theme"
+        android:text="@string/search"
+        android:textColor="@android:color/white" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/keyword_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/search_btn">
+
+        <EditText
+            android:id="@+id/keyword_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/keyword"
+            android:textColorHint="@color/tea_theme" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/keyword_text_input_layout"
+        android:text="@string/hot_search"
+        android:textColor="@color/tea_theme" />
+
+</RelativeLayout>

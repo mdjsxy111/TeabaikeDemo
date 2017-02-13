@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "W:\\AAA_Demo\\BBBBBB\\TeabaikeDemo\\library_pull_to_refresh\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\default_ptr_flip.png",
+        "source": "W:\\AAA_Demo\\BBBBBB\\TeabaikeDemo\\library_pull_to_refresh\\src\\main\\res\\drawable-xhdpi\\default_ptr_flip.png"
+    },
+    {
+        "merged": "W:\\Users\\Estyle\\Desktop\\fragment\\classDemo\\TeabaikeDemo\\library_pull_to_refresh\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\default_ptr_flip.png",
+        "source": "W:\\Users\\Estyle\\Desktop\\fragment\\classDemo\\TeabaikeDemo\\library_pull_to_refresh\\src\\main\\res\\drawable-xhdpi\\default_ptr_flip.png"
+    },
+    {
+        "merged": "W:\\Users\\Estyle\\Desktop\\fragment\\classDemo\\TeabaikeDemo\\library_pull_to_refresh\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\indicator_arrow.png",
+        "source": "W:\\Users\\Estyle\\Desktop\\fragment\\classDemo\\TeabaikeDemo\\library_pull_to_refresh\\src\\main\\res\\drawable-xhdpi\\indicator_arrow.png"
+    },
+    {
+        "merged": "W:\\Users\\Estyle\\Desktop\\fragment\\classDemo\\TeabaikeDemo\\library_pull_to_refresh\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\default_ptr_rotate.png",
+        "source": "W:\\Users\\Estyle\\Desktop\\fragment\\classDemo\\TeabaikeDemo\\library_pull_to_refresh\\src\\main\\res\\drawable-xhdpi\\default_ptr_rotate.png"
+    },
+    {
+        "merged": "W:\\AAA_Demo\\BBBBBB\\TeabaikeDemo\\library_pull_to_refresh\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\indicator_arrow.png",
+        "source": "W:\\AAA_Demo\\BBBBBB\\TeabaikeDemo\\library_pull_to_refresh\\src\\main\\res\\drawable-xhdpi\\indicator_arrow.png"
+    },
+    {
+        "merged": "W:\\AAA_Demo\\BBBBBB\\TeabaikeDemo\\library_pull_to_refresh\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\default_ptr_rotate.png",
+        "source": "W:\\AAA_Demo\\BBBBBB\\TeabaikeDemo\\library_pull_to_refresh\\src\\main\\res\\drawable-xhdpi\\default_ptr_rotate.png"
+    }
+]

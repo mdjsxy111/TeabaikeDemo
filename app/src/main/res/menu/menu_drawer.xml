@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/collection">
+
+        <menu>
+
+            <group>
+                <item
+                    android:id="@+id/my_collection_item"
+                    android:title="@string/my_collection" />
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item android:title="@string/about_app">
+
+        <menu>
+
+            <group>
+                <item
+                    android:id="@+id/copyright_info_item"
+                    android:title="@string/copyright" />
+                <item
+                    android:id="@+id/suggestion_item"
+                    android:title="@string/suggestion" />
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="bean"
+            type="com.estyle.teabaike.bean.ContentBean.DataBean" />
+
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.ContentActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/expanded_titlebar_height">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="@android:color/white"
+                app:expandedTitleMarginStart="@dimen/activity_horizontal_margin"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/tea_theme">
+
+                    <TextView
+                        android:id="@+id/source_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:text="@{bean.source}"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/author_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/source_text_view"
+                        android:text="@{bean.author}"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/create_time_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@id/author_text_view"
+                        android:text="@{bean.create_time}"
+                        android:textColor="@android:color/white" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/titlebar_height"
+                    app:layout_collapseMode="pin"
+                    app:title="@{bean.title}" />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <WebView
+                    android:id="@+id/content_web_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:webData="@{bean.wap_content}" />
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</layout>
